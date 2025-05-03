@@ -14,10 +14,25 @@ def letter_counter(text: str, letter: str) -> int:
     """
     return text.lower().count(letter.lower())
 
+# --- Components -----------------------------------------------------------
+# 明示的に label を指定して API 名を関数引数と一致させることで、
+# MCP 経由の JSON キー不一致（"text_1" 問題）を解消するよ ✨
+text_input = gr.Textbox(
+    label="text",
+    placeholder="Enter text here"
+)
+letter_input = gr.Textbox(
+    label="letter",
+    placeholder="Enter a single letter",
+    max_lines=1
+)
+count_output = gr.Number(label="count")
+
+# --- Interface ------------------------------------------------------------
 demo = gr.Interface(
     fn=letter_counter,
-    inputs=["text", "text"],
-    outputs="number",
+    inputs=[text_input, letter_input],
+    outputs=count_output,
     title="Letter Counter (MCP demo)",
     description="Enter text & a letter – count occurrences. Launches with MCP automatically.",
 )
