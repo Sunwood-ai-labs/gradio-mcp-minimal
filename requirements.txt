@@ -1,1 +1,2 @@
-gradio[mcp]
+mcp
+https://gradio-pypi-previews.s3.amazonaws.com/3b5cace94781b90993b596a83fb39fd1584d68ee/gradio-5.26.0-py3-none-any.whl
