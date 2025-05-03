@@ -1,3 +1,14 @@
+---
+title: Gradio MCP Minimal
+emoji: 🌍
+colorFrom: blue
+colorTo: blue
+sdk: gradio
+sdk_version: 5.26.0
+app_file: app.py
+pinned: false
+---
+
 <div align="center">
 
 <!-- ここに SVG ヘッダーを追加する場合は assets/header.svg を用意してください -->
