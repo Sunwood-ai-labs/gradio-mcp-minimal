@@ -92,6 +92,32 @@ demo.launch(mcp_server=True)
 ```
 https://<your-space>.hf.space/gradio_api/mcp/sse
 ```
+例）`https://makiai-gradio-mcp-minimal.hf.space/gradio_api/mcp/sse`
+
+## 🔗 MCP クライアント設定例 (Spaces)
+
+Spaces で公開したサーバーを **MCP クライアント（Claude Desktop / Cline など）** から呼び出す手順です。
+
+1. **エンドポイント URL**
+   ```
+   https://<your-space>.hf.space/gradio_api/mcp/sse
+   ```
+   例）`https://makiai-gradio-mcp-minimal.hf.space/gradio_api/mcp/sse`
+
+2. **config 追記例** (`claude_desktop_config.json` 等)
+   ```jsonc
+   {
+     "mcpServers": {
+       "gradio-space": {                // 任意の名前
+         "url": "https://makiai-gradio-mcp-minimal.hf.space/gradio_api/mcp/sse"
+       }
+     }
+   }
+   ```
+
+3. **動作確認**
+   クライアントを再起動 → Tool Palette で `server = gradio-space` を選択 →
+   `letter_counter` ツールに `text: "hello"` を送信し、`length: 5` が返れば接続完了です 🎉
 
 ## 📝 ライセンス
 MIT
