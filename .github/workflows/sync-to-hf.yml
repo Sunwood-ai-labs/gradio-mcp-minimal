@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://MakiAi:$HF_TOKEN@huggingface.co/spaces/MakiAi/gradio-mcp-minimal main
+        run: git push --force-with-lease https://MakiAi:$HF_TOKEN@huggingface.co/spaces/MakiAi/gradio-mcp-minimal main
