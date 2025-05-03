@@ -1,0 +1,5 @@
+# Ignore text files in repository root
+/*.txt
+.SourceSageAssets/
+*.json
+*.log
