@@ -11,11 +11,28 @@ pinned: false
 
 <div align="center">
 
-<!-- ここに SVG ヘッダーを追加する場合は assets/header.svg を用意してください -->
-<!-- <img src="assets/header.svg" alt="Gradio MCP Minimal" width="80%" /> -->
+![Image](https://github.com/user-attachments/assets/a48bdf11-baf1-4e6d-8f4f-10bc33a68551)
 
-# 🚀 **Gradio MCP 最小デモリポジトリ**
 
+# 🚀 **Gradio MCP Minimal**
+
+<p align="center">
+  <a href="https://www.python.org">
+    <img alt="Python" src="https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white">
+  </a>
+  <a href="https://www.gradio.app">
+    <img alt="Gradio" src="https://img.shields.io/badge/Gradio-5.26.0-orange?logo=gradio">
+  </a>
+  <a href="https://github.com/makiai/gradio-mcp-minimal/blob/main/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green">
+  </a>
+  <a href="https://github.com/makiai/gradio-mcp-minimal/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/makiai/gradio-mcp-minimal?style=social">
+  </a>
+<a href="https://huggingface.co/spaces/MakiAi/gradio-mcp-minimal">
+    <img alt="HF Spaces" src="https://img.shields.io/badge/Spaces-Live%20Demo-blueviolet?logo=huggingface&logoColor=white">
+  </a>
+</p>
 </div>
 
 ## ✨ 概要
@@ -30,22 +47,20 @@ pinned: false
 | `assets/header.svg`    | README 用ヘッダー画像（任意） |
 
 ## 📦 セットアップ
-以下のコマンドを利用して実行ください。
-  ```
-  root 🐈 Glen in 🧶 …/gradio-mcp-minimal on 🐾 main [🗑️❓] 🐍 v3.12.3  
-  😺 uv venv
-  Using CPython 3.12.3 interpreter at: /usr/bin/python3
-  Creating virtual environment at: .venv
-  Activate with: source .venv/bin/activate
-  
-  root 🐈 Glen in 🧶 …/gradio-mcp-minimal on 🐾 main [🗑️📝❓] 🐍 v3.12.3  
-  😺 source .venv/bin/activate
-  
-  root 🐈 Glen in 🧶 …/gradio-mcp-minimal on 🐾 main [🗑️📝❓] 🐍 v3.12.3 gradio-mcp-minimal 
-  😺 uv pip install -r requirements.txt 
-  ```
-  
-マニュアルに実行したい場合には下記のコマンドで実行ください。
+
+### 🚀 uv を使ったクイックスタート（推奨）
+
+```bash
+# 仮想環境の作成
+uv venv
+# 仮想環境の有効化
+source .venv/bin/activate
+# 依存インストール
+uv pip install -r requirements.txt
+```
+
+### 🐍 標準 pip のみで実行したい場合
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
