@@ -34,7 +34,7 @@ demo = gr.Interface(
     inputs=[text_input, letter_input],
     outputs=count_output,
     title="Letter Counter (MCP demo)",
-    description="Enter text & a letter – count occurrences. Launches with MCP automatically.",
+    description="![Header Image](https://github.com/user-attachments/assets/a48bdf11-baf1-4e6d-8f4f-10bc33a68551)\n\nEnter text & a letter – count occurrences. Launches with MCP automatically.",
     api_name="letter_counter"
 )
 
